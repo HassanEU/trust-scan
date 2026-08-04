@@ -16,11 +16,13 @@ console.log("Server.js started");
 // CORS configuration
 const allowedOrigins = [
   'http://localhost:5173',
-  'http://localhost:5174'
+  'http://localhost:5174',
+  'https://trust-scan-xi.vercel.app'
 ];
 
 app.use(cors({
   origin: function (origin, callback) {
+    // Allow requests without origin (Postman, mobile apps, etc.)
     if (!origin) {
       return callback(null, true);
     }
