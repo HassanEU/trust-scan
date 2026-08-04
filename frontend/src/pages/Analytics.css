@@ -1,0 +1,81 @@
+.analytics-summary { margin-bottom: 1.25rem; }
+
+.analytics-stat { text-align: center; padding: 1.1rem; }
+.a-stat-value { font-size: 1.6rem; font-weight: 800; color: var(--primary); }
+.a-stat-label { font-size: 0.78rem; color: var(--text-muted); }
+
+.analytics-charts {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.analytics-charts h3,
+.weak-areas h3,
+.suggestions-card h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.subject-bars { display: flex; flex-direction: column; gap: 0.65rem; }
+
+.subject-bar-row {
+  display: grid;
+  grid-template-columns: 100px 1fr 50px;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.sb-name { font-size: 0.85rem; font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.sb-track { height: 8px; background: var(--bg); border-radius: 4px; overflow: hidden; }
+.sb-fill { height: 100%; background: var(--primary); border-radius: 4px; transition: width 0.5s; }
+.sb-val { font-size: 0.78rem; color: var(--text-muted); text-align: right; }
+
+.suggestions-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.suggestions-list li {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  padding: 0.65rem 0.85rem;
+  background: #fffbeb;
+  border-radius: 10px;
+  border-left: 3px solid var(--warning);
+}
+
+.habit-consistency { display: flex; flex-direction: column; gap: 0.65rem; }
+
+.hc-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.88rem;
+}
+
+.hc-item > span:first-child { flex: 1; font-weight: 500; }
+
+.hc-dots { display: flex; gap: 4px; }
+
+.hc-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--border);
+}
+
+.hc-dot.filled { background: var(--success); }
+
+.hc-streak { font-size: 0.78rem; color: var(--text-muted); min-width: 50px; text-align: right; }
+
+@media (max-width: 480px) {
+  .subject-bar-row { grid-template-columns: 80px 1fr 40px; }
+}

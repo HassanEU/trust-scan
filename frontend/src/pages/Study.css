@@ -1,0 +1,83 @@
+.header-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.period-tabs {
+  display: flex;
+  gap: 0.4rem;
+  margin-bottom: 1.25rem;
+}
+
+.period-tab {
+  padding: 0.45rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  background: var(--card);
+  border: 1px solid var(--border);
+  transition: all 0.15s;
+}
+
+.period-tab.active {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+.study-summary { margin-bottom: 1.25rem; }
+
+.summary-card { text-align: center; padding: 1.25rem; }
+.summary-value { font-size: 1.75rem; font-weight: 800; color: var(--primary); }
+.summary-label { font-size: 0.8rem; color: var(--text-muted); margin-top: 0.2rem; }
+
+.study-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.chart-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.subject-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.subject-item {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.65rem 0.75rem;
+  background: var(--bg);
+  border-radius: 10px;
+}
+
+.subject-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.subject-name { flex: 1; font-weight: 500; font-size: 0.9rem; }
+.subject-time { font-size: 0.8rem; color: var(--text-muted); }
+
+.subject-delete {
+  padding: 0.3rem;
+  color: var(--text-muted);
+  border-radius: 6px;
+}
+.subject-delete:hover { color: var(--danger); background: #fef2f2; }
+
+@media (max-width: 768px) {
+  .study-grid { grid-template-columns: 1fr; }
+}

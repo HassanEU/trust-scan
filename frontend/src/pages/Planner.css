@@ -1,0 +1,115 @@
+.task-section { margin-bottom: 1.5rem; }
+
+.section-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.75rem;
+}
+
+.done-label { color: var(--success); }
+
+.task-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.task-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  padding: 1rem;
+  transition: opacity 0.2s;
+}
+
+.task-card.completed { opacity: 0.65; }
+
+.task-check {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+  transition: all 0.15s;
+  color: white;
+}
+
+.task-card:not(.completed) .task-check:hover {
+  border-color: var(--primary);
+  background: var(--primary-light);
+}
+
+.task-card.completed .task-check {
+  background: var(--success);
+  border-color: var(--success);
+}
+
+.check-circle { display: block; }
+
+.task-body { flex: 1; min-width: 0; }
+
+.task-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.3rem;
+  flex-wrap: wrap;
+}
+
+.priority-badge {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.15rem 0.5rem;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.deadline {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.task-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.task-card.completed .task-name {
+  text-decoration: line-through;
+}
+
+.task-desc {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin-top: 0.25rem;
+}
+
+.task-actions {
+  display: flex;
+  gap: 0.25rem;
+  flex-shrink: 0;
+}
+
+.task-actions button {
+  padding: 0.35rem;
+  color: var(--text-muted);
+  border-radius: 6px;
+  transition: all 0.15s;
+}
+
+.task-actions button:hover {
+  background: var(--bg);
+  color: var(--text);
+}
+
+.task-actions .delete-btn:hover {
+  color: var(--danger);
+  background: #fef2f2;
+}
