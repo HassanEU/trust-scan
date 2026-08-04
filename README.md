@@ -224,3 +224,8 @@ The architecture supports:
 - Use MongoDB Atlas with IP allowlisting
 - Marketplace connectors currently use simulated data — integrate real marketplace APIs for production scraping
 - Add rate limiting and request caching before public deployment
+
+
+## live demo
+https://trust-scan-xi.vercel.app
+
