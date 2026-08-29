@@ -1,6 +1,6 @@
-# TrustScan
+# TRUST-SCAN
 
-AI-powered online shopping product authenticity checker. Paste a product URL from Amazon, Flipkart, eBay, or Shopify and get a trust score with seller analysis, review fraud detection, and purchase recommendations.
+AI-powered online shopping product authenticity checker. Paste a product URL  from Amazon, Flipkart, eBay, or Shopify and get a trust score with seller analysis, review fraud  detection, and purchase recommendations.
 
 ## Architecture
 
