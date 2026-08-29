@@ -6,8 +6,8 @@ AI-powered online shopping product authenticity checker. Paste a product URL  fr
 
 ```
 trustscan/
-├── frontend/          # React + Tailwind + Vite
-└── backend/           # Node.js + Express + MongoDB
+├── frontend/          
+└── backend/          
     ├── controllers/
     ├── routes/
     ├── models/
